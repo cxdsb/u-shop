@@ -1,0 +1,31 @@
+[
+    {
+        "src": "images/index_banner_1.png",
+        "href": "http://www.4399.com",
+        "bga":"#2c6abf"
+    },{
+        "src": "images/index_banner_2.jpg",
+        "href": "http://www.4399.com",
+        "bga":"#b34bf6"
+    },{
+        "src": "images/index_banner_3.jpg",
+        "href": "http://www.4399.com",
+        "bga":"#895df8"
+    },{
+        "src": "images/index_banner_4.jpg",
+        "href": "http://www.4399.com",
+        "bga":"#2c6abf"
+    },{
+        "src": "images/index_banner_5.png",
+        "href": "http://www.4399.com",
+        "bga":"#2c6abf"
+    },{
+        "src": "images/index_banner_6.png",
+        "href": "http://www.4399.com",
+        "bga":"#2c6abf"
+    },{
+        "src": "images/index_banner_7.jpg",
+        "href": "http://www.4399.com",
+        "bga":"#895fef"
+    }
+]

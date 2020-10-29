@@ -1,0 +1,36 @@
+#省份接口
+
+###
+
+GET http://127.0.0.1:3000/provincesList
+
+###
+#城市接口
+GET http://127.0.0.1:3000/cityList?pro_id=130000
+
+###
+#轮播图接口
+GET http://127.0.0.1:3000/bannerList
+
+###
+#验证码
+
+GET http://127.0.0.1:3000/regcode
+
+###
+#注册
+# LSJu
+
+POST  http://127.0.0.1:3000/register
+Content-Type: application/x-www-form-urlencoded
+
+userCode=LSJu&username=tanqq2&password=96e79218965eb72c92a549dd5a330112
+
+
+#登录接口
+###
+#Content-Type: application/x-www-form-urlencoded   密码：111111  加密之后的密码:96e79218965eb72c92a549dd5a330112
+POST http://127.0.0.1:3000/login
+Content-Type: application/x-www-form-urlencoded  
+
+ userCode=LSJu&username=chen&password=e10adc3949ba59abbe56e057f20f883e

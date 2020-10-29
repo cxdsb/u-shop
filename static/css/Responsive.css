@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+
+    body{
+
+        overflow-x: visible;
+
+    }
+
+    .index_left{
+        display: none;
+    }
+    .index_right{
+        display: none;
+    }
+}
+

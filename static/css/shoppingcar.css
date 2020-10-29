@@ -1,0 +1,78 @@
+
+.wrap{
+    overflow: hidden;
+    background-color: #ffffff;
+    min-width: 1300px;
+}
+.layout{
+    width: 1200px;
+    margin: auto;
+}
+.content1{
+}
+.content1 table{
+    text-align: center;
+}
+.content1 td img{
+float: left;
+}
+.content1 .content1_td{
+    padding: 5px 80px;
+}
+.content1 tr td{
+    padding: 10px 15px;
+}
+.content1 td .td_right{
+    float: left;
+    overflow: hidden;
+    }
+    .content1 td .td_right p{
+        font-size: 14px;
+     margin: 20px 0 10px 0;
+        width: 350px;
+
+    }
+    .content1 td .td_ri_le{
+        font-size: 14px;
+        }
+        .co2_ri_2_2_2,.co2_ri_2_2_3,.co2_ri_2_2_4{
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+            line-height: 30px;
+            cursor: pointer;
+            border: 1px solid #2e0808;
+        }
+        .content1 .shanaaa a{
+            display: block;
+            font-size: 12px;
+            color: #ff5600;
+            text-decoration: underline;
+        }
+        .content2{
+            height: 100px;
+            margin: 30px auto 30px ;
+        }
+        .content2 .content2_1{
+            float: left;
+            padding: 10px;
+            margin-left: 35px;
+        }
+       .content2_1 a{
+           font-size: 14px;
+           color: #ff5600;
+           margin-left: 40px;
+       }
+        .content2 .content2_2{
+            float: right;
+            padding: 10px;
+        }
+        .content2_2_1{
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .content2 .content2_2 p{
+            font-size: 14px;
+            margin-top: 5px;
+        }

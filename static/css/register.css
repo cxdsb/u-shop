@@ -1,0 +1,132 @@
+.header_xian{
+    border: solid 1px #f26b11;
+}
+.wrap{
+    overflow: hidden;
+    background-color: #f6f6f6;
+    min-width: 1300px;
+}
+.layout{
+    width: 1200px;
+    margin: auto;
+}
+.header_top_right{
+    float: left;
+    font-size: 18px;
+    color: #6b6b6b;
+    margin:5px 0 0 25px;
+    padding:10px 0 10px 20px;
+    border-left: solid 1px #6b6b6b;
+}
+.content{
+    width: 750px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-top: #f26b11 3px solid;
+}
+.con_1{
+    width: 390px;
+   margin: auto;
+}
+.con_1 h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.con_1_you{
+    margin-top: 30px;
+}
+.con_1_you_le{
+    float: left;
+    padding: 5px;
+    border-top: 1px solid #f26b11;
+    border-bottom: 1px solid #f26b11;
+    border-left: 1px solid #f26b11;
+}
+.con_1_you_le .con_1_you_le_1{
+    font-size: 22px;
+    color: #f26b11;
+   
+}
+.con_1_you_ri{
+    float: left;
+}
+.mobile{
+    font-size: 16px;
+    border: 1px solid #f26b11;
+    padding: 8px 150px 8px 8px;
+}
+.ok{
+    font-size: 14px;
+    color: #f26b11; 
+}
+.con_2_you{
+    margin-top: 20px;
+}
+.con_2_you_le{
+    float: left;
+    padding: 5px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+
+    border-left: 1px solid #d9d9d9;
+}
+.con_2_you_le .con_2_you_le_1{
+    font-size: 22px;
+    color: #d9d9d9;
+}
+.con_2_you_ri{
+    float: left;
+}
+.mobile2{
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    padding: 8px 150px 8px 8px;
+}
+.con_3_you{
+    margin-top: 20px;
+}
+.con_3_you_le{
+    float: left;
+    padding: 5px;
+
+}
+.con_3_you_ri{
+padding-bottom: 5px;
+}
+
+.mobile3{
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    padding: 8px 0 8px 8px;
+}
+.con_3_you_ri img{
+    margin-top: 10px;
+}
+.con_4{
+    padding: 10px 181px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 0;
+    background-color: #f26b11;
+    color: #fff;
+    outline:none;
+}
+.con_4_span{
+width: 110px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.con_4_span a{
+color: #f26b11;
+}
+.footer_bottom{
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+    background-color: #ffffff;
+    min-width: 1300px;
+}
+.footer_bottom p{
+    font-size: 12px;
+    margin-top: 10px;
+}

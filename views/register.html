@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小U商城注册</title>
+    <script src="js/html5shiv.js"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/header_lo.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/font/iconfont.css">
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+</head>
+
+<body>
+    <header class="header layout">
+        <div class="header_top">
+            <div class="header_top_l">
+                <img src="/images/index_header_lo.jpg" alt="">
+            </div>
+            <div class="header_top_right">
+
+                欢迎注册
+             </div>
+            </div>
+        </div>
+    </header>
+    <main class="wrap">
+        <div class="content">
+            <div class="con_1">
+
+                <h3>注册账号</h3>
+               
+                    <div class="con_1_you clearfix">
+                        <div class="con_1_you_le">
+                            <span class="iconfont icon-xinfeng con_1_you_le_1"></span>
+                        </div>
+                        <div class="con_1_you_re">
+                            <input type="text" class="mobile" placeholder="请输入邮箱" name="username" id="username">
+                            <a href="#" class="ok">请输入邮箱/邮箱已注册/邮箱格式错误</a>
+                            <em></em><span></span>
+                        </div>
+                    </div>
+                    <div class="con_2_you clearfix">
+                        <div class="con_2_you_le">
+                            <span class="iconfont icon-iconfront- con_2_you_le_1"></span>
+                        </div>
+                        <div class="con_2_you_re">
+                            <input type="text" class="mobile2" placeholder="密码" name="password" id="password">
+                            <a href="#" class="ok">请输入密码/密码格式为6-20个数字和字母组合</a>
+                            <em></em><span></span>
+                        </div>
+                    </div>
+                    <div class="con_3_you clearfix">
+                        <div class="con_3_you_le">
+                            <input type="text" name="userCode" id="userCode" class="mobile3" placeholder="验证码">
+                        </div>
+                        <div class="con_3_you_ri">
+                            <img id="checkCode" src="/regcode" alt="">
+                            <br>
+                        </div>
+                        <br>
+                        <a href="#" class="ok">请输入密码/密码格式为6-20个数字和字母组合</a>
+                        <em></em><span></span>
+                    </div>
+
+
+                    <a href="javascript:;">
+                        <button onclick="register()" class="con_4">注册</button>
+                    </a>
+             
+                <div class="con_4_span">已有账号 <a href="./login">去登录</a></div>
+            </div>
+
+        </div>
+
+    </main>
+    
+   <script>
+    var email = /^[0-9a-zA-Z_]{3,}@[0-9a-zA-Z]+\.(com|cn)$/;
+    var easy = /(^\d{6,20}$)|(^[a-zA-Z]{6,20}$)/;
+    var middle = /(?!^[a-zA-Z]{6,20}$)^[a-zA-Z][0-9a-zA-Z]{5,19}$/;
+  var diff = /(?!^[a-zA-Z]{6,20}$)(?!^[a-zA-Z][0-9a-zA-Z]{5,19}$)^[a-zA-Z][0-9a-zA-Z!@#$%&*()_+=';:,.~]{5,19}$/;
+    
+      // 声明一个数组，存储当前所有输入框的状态
+    var signArr = [];
+  
+$.each($('.con_1 input'),function(index,value){
+signArr.push(false);
+
+$('.con_1 input').eq(index).click(function(){
+    $(value).change(function(){
+
+        if(index == 0){
+            if(email.test(this.value)){
+$('.con_1 em').eq(index).html('格式正确');
+$('.con_1 em').eq(index).css('color','green'); 
+sig.con_1.splice(0,1);   
+sig.con_1.push(true);
+$('.con_1 .ok').eq(index).css('display','none');
+            }else{
+$('.con_1 em').eq(index).html('错误');
+$('.con_1 em').eq(index).css('color','red');  
+            }
+        }else if(index == 1){
+            if (easy.test(this.value)) {
+                $('.con_1 em').eq(index).html('密码等级低');
+                $('.con_1 em').eq(index).css('color','green');  
+                signArr.splice(0,1);   
+                signArr.push(true);
+                $('.con_1 .ok').eq(index).css('display','none');
+          } else if (middle.test(this.value)) {
+            $('.con_1 em').eq(index).html('密码等级中');
+                $('.con_1 em').eq(index).css('color','green');  
+                signArr.splice(0,1);   
+                signArr.push(true);
+                $('.con_1 .ok').eq(index).css('display','none');
+                      }else if(diff.test(this.value)){
+       $('.con_1 em').eq(index).html('密码等级高');
+                $('.con_1 em').eq(index).css('color','green');  
+                signArr.splice(0,1);   
+                signArr.push(true);
+                $('.con_1 .ok').eq(index).css('display','none');
+                      } else {
+                        $('.con_1 em').eq(index).html('密码错误');
+
+                        $('.con_1 em').eq(index).css('color','red');  
+                                    }
+          } else if (index == 2) {
+            if (this.value.toLowerCase() == $('.con_3_you_ri a').html().toLowerCase()) {
+
+                $('.con_1 em').eq(index).html('正确');
+                $('.con_1 em').eq(index).css('color','green');  
+                signArr.splice(0,1);   
+                signArr.push(true);
+                $('.con_1 .ok').eq(index).css('display','none');
+                                    } else {
+       $('.con_1 em').eq(index).html('错误');
+$('.con_1 em').eq(index).css('color','red');  
+                                    }
+                                }
+    })
+})
+
+})
+
+
+    //   form.onsubmit = function () {
+    // // 遍历signArr，判断当前数组中是否全部为true，如果有一个是false，就不能够注册， 如果都是true就可以注册
+    //    for (var i = 0; i < signArr.length; i++) {
+    //    if (signArr[i] == false) {
+    //     alert('请确认信息全部正确');
+    //     console.log(signArr)
+    //      return false;
+    //                             }
+    //                         }
+    //                     }
+
+
+</script> 
+
+    <footer class="footer_bottom">
+        <p>Copyright© 2002-2020，小U商城 版权所有 保留一切权利</p>
+        <p>
+            公网安备 3201013010078号| ICP备1022093551号-4 出版物经营许可证新出发批字第R-243号| 互联网药品信息服务资格证书-非经营性-2016-0005
+        </p>
+    </footer>
+</body>
+
+</html>
+<script src="./utils/request.js"></script>
+    <script>
+
+        async function register() {
+            let username = $("#username").val();
+            let password = $.md5($("#password").val());
+            let userCode = $("#userCode").val();
+            console.log(username, password, userCode)
+
+            let arr = await Ajax({
+         url:"/register", //后端传输过来的接口地址
+         type:"POST",
+         data:{
+            username,
+            password,
+            userCode
+         }
+
+     }) 
+      alert("注册成功");
+      window.location.href = "./login";
+
+        }
+
+
+        $('#checkCode').click(function () {
+            $('#checkCode').attr('src', "/regcode" + "?" + Math.floor(Math.random() * 10));
+            
+        })
+    </script>

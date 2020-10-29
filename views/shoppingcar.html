@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小U商城购物车</title>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font_2/iconfont.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_1 layout clearfix">
+            <ul class="nav_l  clearfix">
+                <li class="dao top_1_li_a">
+                    <a href="#">网站导航 <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="dao_1">
+
+                        <div class="dao_1_1">
+
+                            <h5>特色购物</h5>
+                            <ul class="dao_1_1_ul clearfix">
+                                <li><a href="#">苏宁互联</a></li>
+                                <li><a href="#">苏宁达人</a></li>
+                                <li><a href="#">苏宁卡</a></li>
+                                <li><a href="#">苏宁国际</a></li>
+                                <li><a href="#">易回收</a></li>
+                                <li><a href="#">二手优品</a></li>
+                                <li><a href="#">领劵中心</a></li>
+                                <li><a href="#">苏宁Outlets</a></li>
+                                <li><a href="#">节能超市</a></li>
+                                <li><a href="#">导购指南</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dao_1_1">
+                            <h5>主题频道</h5>
+                            <ul class="dao_1_1_ul clearfix">
+                                <li><a href="#">电器城</a></li>
+                                <li><a href="#">苏宁超市</a></li>
+                                <li><a href="#">手机</a></li>
+                                <li><a href="#">运动馆</a></li>
+                                <li><a href="#">图书</a></li>
+                                <li><a href="#">红孩子母婴</a></li>
+                                <li><a href="#">美妆个护</a></li>
+                                <li><a href="#">电脑</a></li>
+                                <li><a href="#">服装城</a></li>
+                                <li><a href="#">智能生活</a></li>
+                                <li><a href="#">家装馆</a></li>
+                                <li><a href="#">苏宁汽车</a></li>
+                                <li><a href="#">排行榜</a></li>
+                                <li><a href="#">医药馆</a></li>
+                            </ul>
+                        </div>
+                        <div class="dao_1_1">
+                            <h5>生活助手</h5>
+                            <ul class="dao_1_1_ul clearfix">
+                                <li><a href="#">零钱宝</a></li>
+                                <li><a href="#">手机充值</a></li>
+                                <li><a href="#">转账还账</a></li>
+                                <li><a href="#">约服务</a></li>
+                                <li><a href="#">水电煤</a></li>
+                                <li><a href="#">保险</a></li>
+                                <li><a href="#">机票</a></li>
+                                <li><a href="#">门店查询</a></li>
+                                <li><a href="#">酒店</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dao_1_1">
+                            <h5>会员服务</h5>
+                            <ul class="dao_1_1_ul clearfix">
+                                <li><a href="#">会员联盟</a></li>
+                                <li><a href="#">延长保修</a></li>
+                                <li><a href="#">易付宝</a></li>
+                                <li><a href="#">苏宁理财</a></li>
+                                <li><a href="#">苏宁金融</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="dao_1_1">
+                            <h5>更多热点</h5>
+                            <ul class="dao_1_1_ul clearfix">
+                                <li><a href="#">pp视频</a></li>
+                                <li><a href="#">合作招商</a></li>
+                                <li><a href="#">苏宁联盟</a></li>
+                                <li><a href="#">用户体验</a></li>
+                                <li><a href="#">苏宁云</a></li>
+                                <li><a href="#">苏宁足球</a></li>
+                                <li><a href="#">苏宁公益</a></li>
+                                <li><a href="#">苏宁有货</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="shang top_1_li_a ">
+                    <a href="#">商家入驻 <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="chuang_1">
+                        <ul class="chuang-1_ul clearfix">
+                            <li><a href="#">合作招商</a></li>
+                            <li><a href="#">服务市场</a></li>
+                            <li><a href="#">金融管理</a></li>
+                            <li><a href="#">培训中心</a></li>
+                            <li><a href="#">易通天下</a></li>
+                            <li><a href="#">规则中心</a></li>
+                            <li><a href="#">规则众议院</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="shang-2 top_1_li_a ">
+                    <a href="#">客户服务 <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="chuang_2">
+                        <ul class="chuang-2_ul clearfix">
+                            <li><a href="#">苏宁帮客</a></li>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">查找门店</a></li>
+                            <li><a href="#">退换维修</a></li>
+                            <li><a href="#">意见反馈</a></li>
+                            <li><a href="#">30天包退</a></li>
+                            <li class="chuang-2_ul_li1"><a href="#">在线咨询
+                                    <span class="iconfont icon-zixun zaixian"></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dizhi_bei ">
+                    <a href="#"><span class="iconfont icon-location beijing"></span> 北京 <span
+                            class="iconfont icon-xiajiantou1 beijing_1"></span></a>
+                </li>
+
+            </ul>
+            <ul class="nav_r clearfix">
+                <li class="li_qin"><a href="login.html">请登录</a>
+
+                </li>
+                <li class="li_hov" style="display: none;"><a>已登录</a>
+                    <div class="li_login" style="display: none;">
+                        <p>我的购物车</p>
+                        <p class="li_zhuxiao">注销</p>
+                    </div>
+                </li>
+                <script>
+                    var flag = 0;
+                    $('.li_hov').click(function () {
+
+                        if (flag == 0) {
+                            $('.li_login').css('display', 'block');
+                            flag = 1;
+                        } else {
+                            $('.li_login').css('display', 'none');
+                            flag = 0;
+                        }
+
+                    })
+                    var li_hov = document.getElementsByClassName('li_hov')[0];
+                    var li_qin = document.getElementsByClassName('li_qin')[0];
+                    var li_zhuxiao = document.getElementsByClassName('li_zhuxiao')[0];
+                    if (localStorage.getItem('tel') && localStorage.getItem('psd')) {
+                        li_hov.style.display = 'block';
+                        li_qin.style.display = 'none';
+                    } else {
+                        li_hov.style.display = 'none';
+                        li_qin.style.display = 'block';
+                    }
+                    li_zhuxiao.onclick = function () {
+                        localStorage.clear();
+                        li_hov.style.display = 'none';
+                        li_qin.style.display = 'block';
+                    }
+                </script>
+                <li><a href="register.html" class="nav_r_zhu">注册有礼</a></li>
+                <li class="ding top_1_li_a ">
+                    <a href="#">我的订单 <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="dingdan">
+                        <ul class="dingdan_ul">
+                            <li><a href="#">待支付</a></li>
+                            <li><a href="#">待收货</a></li>
+                            <li><a href="#">待评价</a></li>
+                            <li><a href="#">修改订单</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="yig top_1_li_a ">
+                    <a href="#">我的易购 <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="yigou clearfix">
+                        <ul class="yigou_ul">
+                            <li><a href="#"><img src="logo.ico" alt=""></a></li>
+                            <li><a href="login.html">请登录</a></li>
+                            <li><a href="#">我的二手</a></li>
+                            <li><a href="#">我的关注</a></li>
+                            <li><a href="#">我的金融</a></li>
+                            <li><a href="#">苏宁会员</a></li>
+                            <li><a href="#">我的任性付</a></li>
+                            <li><a href="#">我的优惠卷</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+
+                <li><a href="#">小U会员</a></li>
+                <li class="gouw top_1_li_a ">
+                    <a href="#" class="nav_r_zhu"><span class="iconfont  icon-gouwuche"></span>
+                        购物车</a> <span class="iconfont icon-xiajiantou"></span>
+                    <div class="gouwu clearfix">
+                        <img src="https://i01piccdn.sogoucdn.com/28a1b496b76d061f" alt="图片加载失败">
+                        <p>不能让您的购物车空着，快去逛逛吧！</p>
+                        <button class="gouwu_dengl"><a href="login.html">登录</a></button>
+                    </div>
+                </li>
+                <li><a href="#">易付宝</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li class="xiaou top_1_li_a ">
+                    <a href="#">手机小U <span class="iconfont icon-xiajiantou"></span></a>
+                    <div class="xiaouu clearfix">
+                        <div class="xiaouu_1">
+                            <img src="images/index_xiaouu_1.jpg" alt="">
+                            <p>关注苏宁推客公众号</p>
+                            <p>自购省钱 分享赚钱</p>
+                        </div>
+                        <div class="xiaouu_2"></div>
+
+                        <div class="xiaouu_1">
+                            <img src="images/index_xiaouu_1 (2).jpg" alt="">
+                            <p>扫一扫</p>
+                            <p>下载苏宁金融APP</p>
+                        </div>
+                        <div class="xiaouu_2"></div>
+                        <div class="xiaouu_1">
+                            <img src="images/index_xiaouu_1 (3).jpg" alt="">
+                            <p>扫一扫</p>
+                            <p>关注苏宁易购服务号</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <header class="header-1">
+        <div class="header">
+
+            <div class="header_top clearfix layout">
+                <div class="header_top_l">
+                    <img src="images/index_header_lo.jpg" alt="">
+                </div>
+
+                <div class="header_top_r">
+
+                    <div class="sousuo">
+                        <form action="" class="parent">
+                            <input type="text" class="search" placeholder="搜索">
+                            <input type="button" value="搜索">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                var ot = $('.header_top').offset().top;
+                // console.log(ot);
+                window.onscroll = function () {
+                    var sctop = $(window).scrollTop();
+                    if (sctop >= 500) {
+                        $('.header_top').attr('class', 'header_topco');
+                    } else {
+                        $('.header_topco').attr('class', 'header_top clearfix layout');
+
+                    }
+                }
+
+            </script>
+            <div class="header_cen clearfix layout">
+                <ul>
+                    <li><a href="#">手机 |</a></li>
+                    <li><a href="#">电动牙刷 |</a></li>
+                    <li><a href="#">电视 |</a></li>
+                    <li class="header_cen_li1"><a href="#"> 海尔空调 |</a></li>
+                    <li><a href="#">洗衣机 |</a></li>
+                    <li><a href="#">茅台 |</a></li>
+                    <li><a href="#">热水器 |</a></li>
+                    <li><a href="#">ipad |</a></li>
+                    <li><a href="#">微波炉</a></li>
+                </ul>
+            </div>
+            <div class="header_bot clearfix layout">
+                <div class="header_bot_1">
+                    <a href="#"><img src="images/index_header_bot.jpg" alt=""></a>
+                    <h4>全部商品分类</h4>
+                </div>
+                <div class="header_bot_2">
+                    <ul class="clearfix">
+                        <li><a href="#">限时抢购</a></li>
+                        <li><a href="#">红孩子</a></li>
+                        <li class="header_bot_2_li1"><a href="#">小U超市
+                                <span class="iconfont icon-huo huo"></span>
+                            </a></li>
+                        <li><a href="#">电器城</a></li>
+                        <li><a href="#">生活家电</a></li>
+                        <li><a href="#">时尚服饰</a></li>
+                        <li><a href="#">金融</a></li>
+
+                    </ul>
+                </div>
+                <div class="header_bot_3">
+                    公示: 协议|规则|证照
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="content1 layout">
+            <table border="0" cellpadding="10">
+                <thead>
+                    <tr style="border-bottom: #eeeeee 1px solid;">
+                        <td>
+                            <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan">全选</label>
+                        </td>
+                        <th>商品</th>
+                        <th class="content1_td">单价</th>
+                        <th>购买数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                
+                <tr style="border-bottom: #eeeeee 1px solid;">
+                    <td>
+                        <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan"></label>
+
+                    </td>
+                    <td class="clearfix content1_td">
+                        <a href="#">
+                            <img src="images/mobel.jpg" width="100px" alt="">
+
+                        </a>
+                        <div class="td_right">
+                            <p>Apple iPhone 6Plus(A1524)64G 深空灰 移动电信4 G手机</p>
+
+                            <span class="td_ri_le">颜色：红</span>
+                            <span class="td_ri_le">型号:V1</span>
+                        </div>
+
+                    </td>
+                    <td>
+                        ￥5199.00
+                    </td>
+                    <td>
+
+                        <div class="co2_ri_2_2_3">-</div>
+                        <div class="co2_ri_2_2_2">1</div>
+                        <div class="co2_ri_2_2_4">+</div>
+
+                    </td>
+                    <td style="color: #ff5600;">5199.00</td>
+                    <td class="shanaaa">
+                        <a class="remove">删除</a>
+                        <a href="#">移入收藏夹</a>
+                    </td>
+                </tr>
+                <tr style="border-bottom: #eeeeee 1px solid;">
+                    <td>
+     <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan"></label>
+
+                    </td>
+                    <td class="clearfix content1_td">
+                        <a href="#">
+                            <img src="images/mobel.jpg" width="100px" alt="">
+
+                        </a>
+                        <div class="td_right">
+                            <p>Apple iPhone 6Plus(A1524)64G 深空灰 移动电信4 G手机</p>
+
+                            <span class="td_ri_le">颜色：红</span>
+                            <span class="td_ri_le">型号:V1</span>
+                        </div>
+
+                    </td>
+                    <td>
+                        ￥5199.00
+                    </td>
+                    <td>
+
+                        <div class="co2_ri_2_2_3">-</div>
+                        <div class="co2_ri_2_2_2">1</div>
+                        <div class="co2_ri_2_2_4">+</div>
+
+                    </td>
+                    <td style="color: #ff5600;">5199.00</td>
+                    <td class="shanaaa">
+                        <a class="remove">删除</a>
+                        <a href="#">移入收藏夹</a>
+                    </td>
+                </tr>
+                <tr style="border-bottom: #eeeeee 1px solid;">
+                    <td>
+                        <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan"></label>
+
+                    </td>
+                    <td class="clearfix content1_td">
+                        <a href="#">
+                            <img src="images/mobel.jpg" width="100px" alt="">
+
+                        </a>
+                        <div class="td_right">
+                            <p>Apple iPhone 6Plus(A1524)64G 深空灰 移动电信4 G手机</p>
+
+                            <span class="td_ri_le">颜色：红</span>
+                            <span class="td_ri_le">型号:V1</span>
+                        </div>
+
+                    </td>
+                    <td>
+                        ￥5199.00
+                    </td>
+                    <td>
+
+                        <div class="co2_ri_2_2_3">-</div>
+                        <div class="co2_ri_2_2_2">1</div>
+                        <div class="co2_ri_2_2_4">+</div>
+
+                    </td>
+                    <td style="color: #ff5600;">5199.00</td>
+                    <td class="shanaaa">
+                        <a class="remove">删除</a>
+                        <a href="#">移入收藏夹</a>
+                    </td>
+                </tr>
+                <tr style="border-bottom: #eeeeee 1px solid;">
+                    <td>
+                        <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan"></label>
+
+                    </td>
+                    <td class="clearfix content1_td">
+                        <a href="#">
+                            <img src="images/mobel.jpg" width="100px" alt="">
+
+                        </a>
+                        <div class="td_right">
+                            <p>Apple iPhone 6Plus(A1524)64G 深空灰 移动电信4 G手机</p>
+
+                            <span class="td_ri_le">颜色：红</span>
+                            <span class="td_ri_le">型号:V1</span>
+                        </div>
+
+                    </td>
+                    <td>
+                        ￥5199.00
+                    </td>
+                    <td>
+
+                        <div class="co2_ri_2_2_3">-</div>
+                        <div class="co2_ri_2_2_2">1</div>
+                        <div class="co2_ri_2_2_4">+</div>
+
+                    </td>
+                    <td style="color: #ff5600;">5199.00</td>
+                    <td class="shanaaa">
+                        <a class="remove">删除</a>
+                        <a href="#">移入收藏夹</a>
+                    </td>
+
+                </tr>
+</tbody>
+            </table>
+
+        </div>
+        <div class="content2 layout">
+            <div class="content2_1">
+                <input name="quan" class="quanxuan" id="quan" type="checkbox" /><label for="quan">全选</label>
+                <a>删除选中的商品</a>
+            </div>
+            <div class="content2_2">
+  <span class="content2_2_1">已选择<a style="color: #ff5600;">1</a>件商品</span>
+                <span class="content2_2_1">总价:￥5199</span>
+                <p>优惠：￥0.00</p>
+                <p>合计：<a style="color: #ff5600; font-size: 16px;">￥5199.00</a></p>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+  
+
+
+
+var table = document.getElementsByTagName('table')[0];
+
+var tbodies = document.getElementsByTagName('tbody')[0];
+var thead = document.getElementsByTagName('thead')[0];
+
+var tbotr = tbodies.getElementsByTagName('tr');
+var tbinps = tbodies.getElementsByTagName('input');
+var thinps = thead.getElementsByTagName('input')[0];
+
+var remove = document.getElementsByClassName('remove');
+
+// console.log(tbinps)
+thinps.onclick = function () {
+// this.checked  可以得到当前复选框的选中状态，如果是 true 就是选中，如果是 false 就是未选中
+
+            for (var x = 0; x < tbinps.length; x++) {
+                tbinps[x].checked = this.checked;
+
+            }
+        }
+var content2_1 = document.getElementsByClassName('content2_1')[0];
+var inps = content2_1.getElementsByTagName('input')[0];
+var cona = content2_1.getElementsByTagName('a')[0];
+inps.onclick = function(){
+    for (var x = 0; x < tbinps.length; x++) {
+                tbinps[x].checked = this.checked;
+
+            }
+}
+cona.onclick = function(){
+
+    for (var i = 0; i < tbinps.length; i++) {
+                console.log(tbinps[i].checked);
+                if (tbinps[i].checked) {
+                    // 删除整行
+                    
+                 tbinps[i].parentNode.parentNode.remove();
+              
+            
+ console.log(tbinps[i].parentNode.parentNode)
+   
+                    // 因为删除一个行之后，元素更新，下标减一
+                    i--;
+                }
+            }
+            // if(confirm('确定删除')){
+            //     $('.tbody tr')
+            // }
+}
+
+
+
+move()
+
+for (i = 0; i < tbotr.length; i++) {
+                car(i);
+        
+}
+$('.content2_2 span a').text(tbotr.length)
+function car(i){
+    
+
+ var sum1 = $('table tbody tr:eq('+ i +') .co2_ri_2_2_2').text()
+            var sum2 = $('table tbody tr:eq('+ i +') td:eq(4)').text()
+       $('.content2_2 p a').text(tbotr.length * sum2)    
+// var sum3 = $('table tbody tr:eq('+ i +') .co2_ri_2_2_2').text();
+
+            $('table tbody tr:eq('+ i +') .co2_ri_2_2_4').click(function () {
+                sum1++;
+                $('table tbody tr:eq('+ i +') .co2_ri_2_2_2').text(sum1);
+                $('table tbody tr:eq('+ i +') td:eq(4)').text(sum2 * sum1)
+// $('.content2_2 span a').text(sum1)
+var totonum = $('.content2_2 span a').text();
+totonum++;
+$('.content2_2 span a').text(totonum);
+$('.content2_2 p a').text(totonum * sum2)  
+num = totonum * sum2;
+            })
+            $('table tbody tr:eq('+ i +') .co2_ri_2_2_3').click(function () {
+                sum1--;
+                 if(sum1 <= 0){
+                    sum1 = 0;
+                }
+                $('table tbody tr:eq('+ i +') .co2_ri_2_2_2').text(sum1);
+                $('table tbody tr:eq('+ i +') td:eq(4)').text(sum2 * sum1)
+                var totonum = $('.content2_2 span a').text();
+totonum--;
+$('.content2_2 span a').text(totonum);
+            })
+            
+ var back;
+$.each($('.remove'),function(index,value){
+// console.log(value)
+$(value).click(function(){
+    
+    if ($('tbody input').prop('checked')) {
+            console.log(true)
+            $(this).parents('tbody tr').detach(); 
+        } else {
+            console.log(false)
+        }
+})
+})
+//   back = confirm('确定要删除吗')
+//             if(back){
+//                 $('.remove').parents('tbody tr').detach(); 
+//             }
+
+}
+       
+
+
+    function move(){
+        for (var x = 0; x < tbinps.length; x++) {
+        // 判断input的checkedbox状态
+        tbinps[x].onclick = function () {
+            var flag = true;
+            for (var x = 0; x < tbinps.length; x++) {
+                if (!tbinps[x].checked) {
+                    flag = false;
+                }
+            }
+            thinps.checked = flag;
+
+        }
+    }
+    }         
+          
+      
+
+    </script>
+   
+    <footer class="footer">
+        <div class="footer_top clearfix">
+            <ul>
+                <li><a href="#" style="font-size: 16px;">购物指南</a></li>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">支付方式</a></li>
+                <li><a href="#">配送方式</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="font-size: 16px;">售后服务</a></li>
+                <li><a href="#">售后政策</a></li>
+                <li><a href="#">价格保护</a></li>
+                <li><a href="#">退款说明</a></li>
+                <li><a href="#">返修/退换货</a></li>
+                <li><a href="#">取消订</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="font-size: 16px;">配送方式</a></li>
+                <li><a href="#">上门自提</a></li>
+                <li><a href="#">211限时达</a></li>
+                <li><a href="#">配送服务查询</a></li>
+                <li><a href="#">配送费收取标准</a></li>
+                <li><a href="#">海外配送</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" style="font-size: 16px;">支付方式</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">支付宝支付</a></li>
+                <li><a href="#">邮局汇款</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#" style="font-size: 16px;">用户帮助</a></li>
+                <li><a href="#">免费注册</a></li>
+                <li><a href="#">找回密码</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">优惠卷使用</a></li>
+
+            </ul>
+        </div>
+        <div class="footer_ce"></div>
+        <div class="footer_bottom">
+            <p>Copyright© 2002-2020，小U商城 版权所有 保留一切权利</p>
+            <p>
+                公网安备 3201013010078号| ICP备1022093551号-4 出版物经营许可证新出发批字第R-243号| 互联网药品信息服务资格证书-非经营性-2016-0005
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
